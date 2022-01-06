@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+          .headerleft img{
+    object-fit: contain;
+    margin-left: 2px;
+    height: 50px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.headerleft{
+    display: flex;
+    align-items: center;
+}
+.headerleft span{
+    padding: 8px;
+    cursor: pointer;
+}
+.headercenter{
+    display: flex;
+    align-items: center;
+    background-color:whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    position: sticky;
+}
+.headercenter input{
+    border:none;
+    width :100%;
+    font-size: medium;
+    outline:none;
+    background-color: transparent;
+}
+.headercenter span{
+    padding:5px;
+    cursor:pointer;
+    background-color: whitesmoke;
+}
+.headerright{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.headerright span{
+    padding: 10px;
+    cursor: pointer;
+
+}
+.sidelist{
+    max-width: 300px;
+    align-items: center;
+
+}
+.sidelist-compose{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    color: gray;
+    font-size: medium;
+    padding: 10px;
+    margin-top : 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 3px #ddd6d6;
+    cursor: pointer;
+
+}
+.sidelist-compose span {
+     padding: 3px; 
+    
+}
+.sidelist-option{
+display: flex;
+padding: 10px;
+align-items: center;
+text-transform: capitalize;
+margin-top: 20px;
+cursor: pointer;
+border:none ;
+outline: none;
+width:100px;
+margin-left: 10px;
+}
+
+.sidelist-option span {
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+      </style>
+    
+    <title>Gmail Clone</title>
+</head>
+
+<body>
+   <div class = "header">
+    <div class = "headerleft">
+        <span class="material-icons">
+            menu
+            </span>
+            <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRNOJpRlrJrANUho9eSgJ9ezRcQW_6Wj2aw&usqp=CAU"
+            
+            />
+        </div>
+
+    
+    <div class = "headercenter">
+        <span class="material-icons">
+            search
+            </span>
+            <input type ="text"placeholder ="search mail"/>
+            <span class="material-icons">
+                arrow_drop_down_circle
+                </span>
+
+    </div>
+        
+    <div class = "headerright">
+        <span class="material-icons">
+            apps
+            </span>
+        <span class="material-icons">
+                notifications
+                </span>
+         <span class="material-icons">
+                    account_circle
+                    </span>
+    
+        
+
+    </div>
+   </div>
+   <div class="centerpage">
+   <div class ="sidelist">
+    <button class = sidelist-compose id="Compose">
+        <span class="material-icons">
+            add
+            </span>
+            <b>Compose</b>
+        </button>
+ <button
+     class="sidelist-option" id="2">
+            <span class="material-icons">
+                inbox
+                </span>
+                primary mails
+        </button> 
+        <button       class="sidelist-option"id="3">
+            <span class="material-icons">
+                send
+                </span>Sent
+        </button> 
+        <button        class="sidelist-option"id="4">
+            <span class="material-icons">
+                drafts
+                </span>Draft
+            </button> 
+    </div>
+    
+
+    </div>
+
+</div>
+    </div>
+
+</body>
+<script>
+var s = document.getElementById("compose")
+s.onclick("click",function(){
+    var div1 = document.createElement("div")
+    div1.style.height="200px";
+    div1.style.width="200px";
+    div1.style.backgroundcolor="blue";
+});
+document.body.appendChild(div1);
+</script>
+
+</html>
